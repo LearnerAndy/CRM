@@ -67,12 +67,13 @@
       <artifactId>spring-boot-starter-tomcat</artifactId>
       <scope>provided</scope>
     </dependency>
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!项目打包时注释!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <!-- mysql -->
-   <!-- <dependency>
+    <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <scope>runtime</scope>
-    </dependency>-->
+    </dependency>
     <!-- c3p0 -->
     <dependency>
       <groupId>com.mchange</groupId>
@@ -96,6 +97,17 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
+    </dependency>
+    <!--整合缓存时添加-->
+    <!-- spring data redis 组件 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <!-- commons-pool2 对象池依赖 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-pool2</artifactId>
     </dependency>
   </dependencies>
   <build>
