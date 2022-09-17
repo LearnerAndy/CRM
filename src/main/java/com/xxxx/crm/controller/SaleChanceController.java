@@ -43,8 +43,9 @@ public class SaleChanceController extends BaseController {
             Integer userId = LoginUserUtil.releaseUserIdFromCookie(request);
             query.setAssignMan(userId);
         }
-        System.out.println(query);
-        return saleChanceService.querySaleChanceByParams(query);
+//        System.out.println(query);
+//        return saleChanceService.querySaleChanceByParams(query);
+        return saleChanceService.querySaleChanceByParamsRedis(query);
     }
 
     /**
